@@ -6,8 +6,6 @@ var keys = require("./keys.js");
 var fs = require("fs");
 var axios = require("axios");
 var Spotify = require('node-spotify-api');
-var request = require('request');
-var inquirer = require('inquirer');
 var moment = require ('moment');
 var spotify = new Spotify(keys.spotify);
 
