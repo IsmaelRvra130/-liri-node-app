@@ -19,7 +19,7 @@ How does the LIRI-bot work? Liri is a command line Node application that takes i
 
         **Activate command by using: node .\liri.js concert-this "argument".
 <h3><b>Demonstartion</b></h3>
-<img src="../-liri-node-app/concert-this gif.gif">
+<img src="./homework/-liri-node-app/concert-this gif.gif">
 <a href>https://github.com/IsmaelRvra130/-liri-node-app/blob/master/concert-this%20gif.gif</a>
 
 </li><br>
