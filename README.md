@@ -51,4 +51,4 @@ How does the LIRI-bot work? Liri is a command line Node application that takes i
 
 <h3>Author</h3>
 <li>Ismael Rivera.</li>
-<li>Updated portfolio: <a href=""></a>
+<li>Updated portfolio: <a href="../Bootstrap-Portfolio/portfolio.html"></a>
