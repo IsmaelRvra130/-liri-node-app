@@ -1,3 +1,4 @@
+//Require from file dotenv inside of node_modules.
 require("dotenv").config();
 
 //variables & required files for Liri bot app.
@@ -12,6 +13,8 @@ var spotify = new Spotify(keys.spotify);
 
 //Grabs user input.
 var command = process.argv[2]
+
+//.splice so that program reads more then 2 words in search.
 var search = process.argv.splice(3).join(" ");
 
 //calling the switch/case logic.
@@ -39,7 +42,7 @@ function RunLiri(com, input){
         
 }
 
-//write each function to call each event.
+
 
 // Search bands in town for artist-logic.
 function concertThis(value) {
@@ -63,33 +66,21 @@ function concertThis(value) {
                 "Performing Line-up: " + response.data[0].lineup,
                 "*************************************"
             ];
+            //logging concert-this search data.
             console.log(artistData);
-        /* var datetime = response.data[0].datetime;
-        datetime = moment().format("dddd - MMMM Do, YYYY");
-        console.log(" ");
-        console.log("*****************");
-
-        console.log("Band name: " + value + ".");
-        console.log("Venue name: " + response.data[0].venue.name);
-        console.log("Venue location: " + response.data[0].venue.city + ", " + response.data[0].venue.region + ". " + response.data[0].venue.country);
-        console.log("Venue date: " + datetime);
-        console.log("Performing line-up: " + response.data[0].lineup)
-        console.log(" ");
-        console.log("*****************");*/
-
-
     })
      
 }
 
     // Spotify logic.
 function spotifyThis(value) {
-     // ** BONUS **logging into file "log.txt"
+     // ** BONUS **logging into file "log.txt".
     fs.appendFile("log.txt", "spotify-this-song," + value + ",",function(error) {
         if (error) {
             console.log(error);
         }
     })
+    //default song "The sign, Ace of Base".
     if (!search) {
         search = "The sign, Ace of Base"
     };
@@ -98,8 +89,6 @@ function spotifyThis(value) {
         if (err) {
           return console.log("Error: " + err);
         }
-
-        
         var name = data.tracks.items[0].name;
         var artist = data.tracks.items[0].artists[0].name;
         var album = data.tracks.items[0].album.name;
@@ -112,12 +101,13 @@ function spotifyThis(value) {
             "Preview link: " + preview,
             "******************************"
         ];
-        
+        //logging the search response.
       console.log(songData); 
      
       });
 }
 
+//Movie-this logiv
 function movie(value) {
     // ** BONUS **logging into file "log.txt"
     fs.appendFile("log.txt", "movie-this," + value + ",",function(error) {
@@ -126,11 +116,8 @@ function movie(value) {
         }
     })
 
-    //http://www.omdbapi.com/?t=" + value + "&y=&plot=short&apikey=a4b34622
     var queryUrl = "http://www.omdbapi.com/?t=" + value + "&y=&plot=short&apikey=a4b34622";
     axios.get(queryUrl).then(function(response) {
-        //console.log(response.data.title);
-        //console.log("The movie's rating is: " + response.data.imdbRating);
             var movieData = [
             "*************************************",
             "Movie title: " + response.data.Title,
@@ -143,13 +130,14 @@ function movie(value) {
             "Actors: " + response.data.Actors,
             "***************************************"
             ];
-
+            // logging the movie-this search data.
         console.log(movieData);
         
     });
 }
-
+// Do-what-it-says logic
 function doIt() {
+    //logs the text from "random.txt" file.
     fs.readFile("random.txt", "utf8",function(error,data) {
         if (error) {
             return console.log(error);
