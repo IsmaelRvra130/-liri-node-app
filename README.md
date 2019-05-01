@@ -13,14 +13,14 @@ How does the LIRI-bot work? Liri is a command line Node application that takes i
 <li> The "spotify-this-song" command works by taking the song provided by the user input, and returning back the artist name,song name,album that song is from, and a preview link with a clip of the song. Once the search is executed the command line will log the information into your terminal and log it into a file named "log.txt".
 
         **Activate command by using: node .\liri.js spotify-this-song "(argument)"  
-<h3><b>Demonstartion for spotify-this-song.</b></h3>
+<h3><b>Demonstration for spotify-this-song.</b></h3>
 <img src="spotify-this.gif">    
 </li><br>
 
 <li> The "concert-this" command works similar to the spotify-this, by taking the name of the band or music group as an argument and will displays the groups next concert date, along the name of the venue,date of the show,and the performing line up that will be playing with the band. Once this command is executed, the return information will be logged into your terminal, and into "log.txt" file.
 
         **Activate command by using: node .\liri.js concert-this "argument".
-<h3><b>Demonstartion for concert-this.</b></h3>
+<h3><b>Demonstration for concert-this.</b></h3>
 <img src="concert-this gif.gif">
 
 
@@ -28,14 +28,14 @@ How does the LIRI-bot work? Liri is a command line Node application that takes i
   <li>The "movie-this" command works by taking the movie name input by the user as an argument and returning back the movie title,release date,IMDB rating,Rotten Tomatoes rating,origin of country produced,available languages,a short plot, and the actors starring in the movie. Once the command is executed, the returned information will be logged into your terminal, and into "log.txt" file.
 
         **Activate command by using: node .\liri.js movie-this "argument"
-<h3><b>Demonstartion for movie-this.</b></h3>
+<h3><b>Demonstration for movie-this.</b></h3>
 <img src="movie-this.gif">
 </li><br>
 
 <li>The "do-what-it-says" command takes the information from the "random.txt" file, and is read by Liri and logged into the terminal with the command given for the argument referenced in the document.
 
      **Activate this command by using: node .\liri.js do-what-it-says
-<h3><b>Demonstartion for do-what-it-says.</b></h3>
+<h3><b>Demonstration for do-what-it-says.</b></h3>
 <img src="do-what-it-says.gif">
 </li><br>
 <h4>Technologies Utilized</h4>
@@ -51,3 +51,4 @@ How does the LIRI-bot work? Liri is a command line Node application that takes i
 
 <h3>Author</h3>
 <li>Ismael Rivera.</li>
+<li>Updated portfolio: <a href=""></a>
