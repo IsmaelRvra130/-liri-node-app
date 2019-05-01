@@ -18,6 +18,8 @@ How does the LIRI-bot work? Liri is a command line Node application that takes i
 <li> The "concert-this" command works similar to the spotify-this, by taking the name of the band or music group as an argument and will displays the groups next concert date, along the name of the venue,date of the show,and the performing line up that will be playing with the band. Once this command is executed, the return information will be logged into your terminal, and into "log.txt" file.
 
         **Activate command by using: node .\liri.js concert-this "argument".
+
+<a href>./-liri-node-app/concert-this gif.gif</a>
 </li><br>
   <li>The "movie-this" command works by taking the movie name input by the user as an argument and returning back the movie title,release date,IMDB rating,Rotten Tomatoes rating,origin of country produced,available languages,a short plot, and the actors starring in the movie. Once the command is executed, the returned information will be logged into your terminal, and into "log.txt" file.
 
