@@ -12,7 +12,7 @@ How does the LIRI-bot work? Liri is a command line Node application that takes i
  
 <li> The "spotify-this-song" command works by taking the song provided by the user input, and returning back the artist name,song name,album that song is from, and a preview link with a clip of the song. Once the search is executed the command line will log the information into your terminal and log it into a file named "log.txt".
 
-        **Activate command by using: node .\liri.js spotify-this-song "(argument)"  
+        **Activate command by using: node .\liri.js spotify-this-song "argument"  
 <h3><b>Demonstration for spotify-this-song.</b></h3>
 <img src="spotify-this.gif">    
 </li><br>
@@ -34,7 +34,7 @@ How does the LIRI-bot work? Liri is a command line Node application that takes i
 
 <li>The "do-what-it-says" command takes the information from the "random.txt" file, and is read by Liri and logged into the terminal with the command given for the argument referenced in the document.
 
-     **Activate this command by using: node .\liri.js do-what-it-says
+     **Activate this command by using: node .\liri.js do-what-it-says "argument"
 <h3><b>Demonstration for do-what-it-says.</b></h3>
 <img src="do-what-it-says.gif">
 </li><br>
