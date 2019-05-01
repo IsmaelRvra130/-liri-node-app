@@ -19,7 +19,7 @@ How does the LIRI-bot work? Liri is a command line Node application that takes i
 
         **Activate command by using: node .\liri.js concert-this "argument".
 <h3><b>Demonstartion</b></h3>
-<a href>https://github.com/IsmaelRvra130/-liri-node-app/master/concert-thisgif.gif</a>
+<a href>https://github.com/IsmaelRvra130/-liri-node-app/master/concert-this%20gif.gif</a>
 
 </li><br>
   <li>The "movie-this" command works by taking the movie name input by the user as an argument and returning back the movie title,release date,IMDB rating,Rotten Tomatoes rating,origin of country produced,available languages,a short plot, and the actors starring in the movie. Once the command is executed, the returned information will be logged into your terminal, and into "log.txt" file.
