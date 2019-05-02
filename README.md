@@ -47,7 +47,7 @@ How does the LIRI-bot work? Liri is a command line Node application that takes i
 <li>NPM dotenv</li>
 <li>NPM axios</li>
 <li>NPM moment</li>
-<li>NodeJS</li>
+
 
 <h3>Author</h3>
 <li>Ismael Rivera.</li>
